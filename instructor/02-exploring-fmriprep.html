@@ -81,8 +81,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li>
-          </ul></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
       <fieldset disabled><input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success tablet-search-button" type="submit">
@@ -237,13 +236,21 @@
                 </h2>
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
-                    <ul><li><a href="profiles.html">Learner Profiles</a></li>
+                    <ul><li>
+                        <a href="../instructor/key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/instructor-notes.html">Instructor Notes</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/images.html">Extract All Images</a>
+                      </li>
+                      
                     </ul></div>
                 </div>
               </div>
             </div>
-
-            <a href="../instructor/aio.html">See all in one page</a>
+            <hr class="half-width resources"><a href="../instructor/aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -373,7 +380,7 @@
 <p>{: .language-python}</p>
 <p>Now that we have a layout object, we can pretend like we’re working with a BIDS dataset! Let’s try some common commands that you would’ve used with a BIDS dataset:</p>
 <p>First, we’ll demonstrate that we can grab a list of pre-processed subjects much like in the way we would grab subjects from a raw BIDS dataset:</p>
-<pre><code><span class="fu">layout.get_subjects</span><span class="op">(</span><span class="op">)</span></code></pre>
+<pre><code><span><span class="fu">layout.get_subjects</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 <p>{: .language-python}</p>
 <pre><code>['10171',
  '10292',
@@ -397,7 +404,7 @@
  '50083']</code></pre>
 <p>{: .output}</p>
 <p>We can also do the same for tasks</p>
-<pre><code><span class="fu">layout.get_tasks</span><span class="op">(</span><span class="op">)</span></code></pre>
+<pre><code><span><span class="fu">layout.get_tasks</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 <p>{: .language-python}</p>
 <pre><code>['rest']</code></pre>
 <p>{: .output}</p>
@@ -430,8 +437,8 @@
 0 directories, 20 files</code></pre>
 <p>{: .output}</p>
 <p>The file that we’re interested in is of form <code>sub-[subject]_desc-preproc_T1w.nii.gz</code>. Now we can construct a pyBIDS call to pull these types of files specifically:</p>
-<pre><code><span class="va">preproc_T1</span> <span class="op">=</span> <span class="fu">layout.get</span><span class="op">(</span>datatype<span class="op">=</span><span class="st">'anat'</span>, desc<span class="op">=</span><span class="st">'preproc'</span>, extension<span class="op">=</span><span class="st">".nii.gz"</span><span class="op">)</span>
-<span class="va">preproc_T1</span></code></pre>
+<pre><code><span><span class="va">preproc_T1</span> <span class="op">=</span> <span class="fu">layout.get</span><span class="op">(</span>datatype<span class="op">=</span><span class="st">'anat'</span>, desc<span class="op">=</span><span class="st">'preproc'</span>, extension<span class="op">=</span><span class="st">".nii.gz"</span><span class="op">)</span></span>
+<span><span class="va">preproc_T1</span></span></code></pre>
 <p>{: .language-python}</p>
 <pre><code>[&lt;BIDSImageFile filename='/home/jerry/projects/workshops/SDC-BIDS-fMRI/data/ds000030/derivatives/fmriprep/sub-10438/anat/sub-10438_desc-preproc_T1w.nii.gz'&gt;,
  &lt;BIDSImageFile filename='/home/jerry/projects/workshops/SDC-BIDS-fMRI/data/ds000030/derivatives/fmriprep/sub-10438/anat/sub-10438_space-MNI152NLin2009cAsym_desc-preproc_T1w.nii.gz'&gt;,
@@ -444,8 +451,8 @@
 </blockquote>
 </blockquote>
 <p>Note that we also pulled in MNI152NLin2009cAsym_preproc.nii.gz data as well. This is data that has been transformed into MNI152NLin2009cAsym template space. We can pull this data out by further specifying our <code>layout.get</code> using the <code>space</code> argument:</p>
-<pre><code><span class="va">mni_preproc_T1</span> <span class="op">=</span> <span class="fu">layout.get</span><span class="op">(</span>datatype<span class="op">=</span><span class="st">'anat'</span>,desc<span class="op">=</span><span class="st">'preproc'</span>,extension<span class="op">=</span><span class="st">'.nii.gz'</span>,space<span class="op">=</span><span class="st">'MNI152NLin2009cAsym'</span><span class="op">)</span>
-<span class="va">mni_preproc_T1</span></code></pre>
+<pre><code><span><span class="va">mni_preproc_T1</span> <span class="op">=</span> <span class="fu">layout.get</span><span class="op">(</span>datatype<span class="op">=</span><span class="st">'anat'</span>,desc<span class="op">=</span><span class="st">'preproc'</span>,extension<span class="op">=</span><span class="st">'.nii.gz'</span>,space<span class="op">=</span><span class="st">'MNI152NLin2009cAsym'</span><span class="op">)</span></span>
+<span><span class="va">mni_preproc_T1</span></span></code></pre>
 <p>{: .language-python}</p>
 <pre><code>[&lt;BIDSImageFile filename='/home/jerry/projects/workshops/SDC-BIDS-fMRI/data/ds000030/derivatives/fmriprep/sub-10438/anat/sub-10438_space-MNI152NLin2009cAsym_desc-preproc_T1w.nii.gz'&gt;,
  &lt;BIDSImageFile filename='/home/jerry/projects/workshops/SDC-BIDS-fMRI/data/ds000030/derivatives/fmriprep/sub-10788/anat/sub-10788_space-MNI152NLin2009cAsym_desc-preproc_T1w.nii.gz'&gt;,
@@ -496,9 +503,9 @@ native_preproc_T1</code></pre>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -520,7 +527,7 @@ native_preproc_T1</code></pre>
   "identifier": "https://fishtree-attempt.github.io/SDC-BIDS-fMRI/instructor/02-exploring-fmriprep.html",
   "dateCreated": "2022-05-31",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-06-21"
+  "datePublished": "2022-06-28"
 }
 
   </script><script>
