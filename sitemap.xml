@@ -31,6 +31,9 @@
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/about.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/aio.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/discuss.html</loc>
   </url>
   <url>
@@ -38,6 +41,9 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/guide.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/images.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/index.html</loc>
@@ -73,6 +79,9 @@
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/about.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/discuss.html</loc>
   </url>
   <url>
@@ -82,7 +91,16 @@
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/guide.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/profiles.html</loc>
@@ -92,6 +110,12 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/setup.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/SDC-BIDS-fMRI/profiles.html</loc>
