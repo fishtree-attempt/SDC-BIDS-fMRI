@@ -881,12 +881,12 @@ we’ll use a bit of python magic to pull the data that we want:</p>
 <p>Similarily fMRI data can be pulled by specifying
 <code>datatype=‘func’</code> and using the <code>desc</code> argument as
 appropriate:</p>
-<div id="challenge1" class="callout challenge">
+<div id="exercise-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-1" class="callout-inner">
-<h3 class="callout-title">Exercise 1<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise 1<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -1200,12 +1200,12 @@ practice and see what the result is:</p>
 </div>
 <figure><img src="fig/masked_t1.png" class="img-responsive figure mx-auto d-block" alt="Nilearn image masking output"></figure><p>As you can see areas where the mask image had a value of 1 were
 retained, everything else was set to 0</p>
-<div id="challenge1" class="callout challenge">
+<div id="exercise-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-1" class="callout-inner">
-<h3 class="callout-title">Exercise #1<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise #1<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
 </h3>
 <div class="callout-content">
 <p>Try applying the mask such that the brain is removed, but the rest of
@@ -1502,12 +1502,12 @@ as usual where instead of using 3 dimensions we use 4.</p>
 <p><code> func.slicer[x,y,z] </code></p>
 <p>vs.</p>
 <p><code> func.slicer[x,y,z,t] </code></p>
-<div id="challenge1" class="callout challenge">
+<div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
 </h3>
 <div class="callout-content">
 <p>Try pulling out the 5th TR and visualizing it using
@@ -1524,7 +1524,7 @@ view of the brain, try scrolling around!</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1744,12 +1744,12 @@ vote.</li>
 <figure><img src="fig/downsample_t1.png" class="img-responsive figure mx-auto d-block" alt="Downsampled T1"></figure><p>Now that we’ve explored the idea of resampling let’s do a cumulative
 exercise bringing together ideas from resampling and basic image
 operations.</p>
-<div id="challenge2" class="callout challenge">
+<div id="exercise-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-1" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
 </h3>
 <div class="callout-content">
 <p>Using <strong>Native</strong> T1 and <strong>T1w</strong> resting
@@ -1891,7 +1891,7 @@ to place the functional data into the void:</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb26">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2113,12 +2113,12 @@ may capture noise (non grey-matter signal for example). Each row
 represents values from a TR/sample. So the number of rows in your
 <code>confound_df</code> should match the number of TRs you have in the
 functional MR data.</p>
-<div id="callout1" class="callout callout">
+<div id="picking-your-confounds" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="picking-your-confounds" class="callout-inner">
-<h3 class="callout-title">Picking your Confounds<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Picking your Confounds<a class="anchor" aria-label="anchor" href="#picking-your-confounds"></a>
 </h3>
 <div class="callout-content">
 <p>The choice of which confounds to use in functional imaging analysis
@@ -2242,12 +2242,12 @@ table</p>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>confound_df <span class="op">=</span> confound_df[final_confounds]</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>confound_df.head()</span></code></pre>
 </div>
-<div id="callout2" class="callout callout">
+<div id="what-the-nan" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="what-the-nan" class="callout-inner">
-<h3 class="callout-title">What the NaN???<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">What the NaN???<a class="anchor" aria-label="anchor" href="#what-the-nan"></a>
 </h3>
 <div class="callout-content">
 <p>As you might have noticed, we have NaN’s in our confound dataframe.
@@ -2575,7 +2575,8 @@ view them using nilearn’s plotting utilities:</p>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>nplot.plot_roi(atlas_yeo_2011[<span class="st">'thick_7'</span>], cut_coords<span class="op">=</span>cut_coords, colorbar<span class="op">=</span>colorbar, cmap<span class="op">=</span>cmap, title<span class="op">=</span><span class="st">'thick_7'</span>)</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>nplot.plot_roi(atlas_yeo_2011[<span class="st">'thick_17'</span>], cut_coords<span class="op">=</span>cut_coords, colorbar<span class="op">=</span>colorbar, cmap<span class="op">=</span>cmap, title<span class="op">=</span><span class="st">'thick_17'</span>)</span></code></pre>
 </div>
-<figure><img src="fig/thin_7.png" class="img-responsive figure mx-auto d-block" alt="Yeo Thin 7"><img src="fig/thin_17.png" class="img-responsive figure mx-auto d-block" alt="Yeo Thin 17"><img src="fig/thick_7.png" class="img-responsive figure mx-auto d-block" alt="Yeo Thick 7"><img src="fig/thick_17.png" class="img-responsive figure mx-auto d-block" alt="Yeo Thick 17"></figure><p>You’ll notice that the colour bar on the right shows the number of
+<p><img src="fig/thin_7.png" class="img-responsive figure" alt="Yeo Thin 7"><img src="fig/thin_17.png" class="img-responsive figure" alt="Yeo Thin 17"><img src="fig/thick_7.png" class="img-responsive figure" alt="Yeo Thick 7"><img src="fig/thick_17.png" class="img-responsive figure" alt="Yeo Thick 17"></p>
+<p>You’ll notice that the colour bar on the right shows the number of
 labels in each atlas and which colour corresponds to which network</p>
 <p>The 7 and 17 network parcellations correspond to the two most stable
 clustering solutions from the algorithm used by the authors. The
@@ -2637,12 +2638,12 @@ that we can work with it later:</p>
 </h3>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>region_labels.to_filename(<span class="st">'../resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/relabeled_yeo_atlas.nii.gz'</span>)</span></code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="resampling-exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="resampling-exercise" class="callout-inner">
-<h3 class="callout-title">Resampling Exercise<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Resampling Exercise<a class="anchor" aria-label="anchor" href="#resampling-exercise"></a>
 </h3>
 <div class="callout-content">
 <p>Our goal is to match the parcellation atlas dimensions to our
@@ -3259,12 +3260,12 @@ these regions will be 0!</p>
 </h3>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>full_correlation_matrix[<span class="dv">0</span>, <span class="dv">45</span>, <span class="dv">43</span>]</span></code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
 </h3>
 <div class="callout-content">
 <p>Apply the data extract process shown above to all subjects in our
@@ -3362,7 +3363,7 @@ blanks!</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3637,7 +3638,7 @@ to understanding Nilearn</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -3661,8 +3662,8 @@ to understanding Nilearn</li>
   "url": "https://preview.carpentries.org/SDC-BIDS-fMRI/aio.html",
   "identifier": "https://preview.carpentries.org/SDC-BIDS-fMRI/aio.html",
   "dateCreated": "2022-11-15",
-  "dateModified": "2023-05-16",
-  "datePublished": "2023-05-16"
+  "dateModified": "2023-05-23",
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

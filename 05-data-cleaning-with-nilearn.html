@@ -426,12 +426,12 @@ may capture noise (non grey-matter signal for example). Each row
 represents values from a TR/sample. So the number of rows in your
 <code>confound_df</code> should match the number of TRs you have in the
 functional MR data.</p>
-<div id="callout1" class="callout callout">
+<div id="picking-your-confounds" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="picking-your-confounds" class="callout-inner">
-<h3 class="callout-title">Picking your Confounds<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Picking your Confounds<a class="anchor" aria-label="anchor" href="#picking-your-confounds"></a>
 </h3>
 <div class="callout-content">
 <p>The choice of which confounds to use in functional imaging analysis
@@ -536,12 +536,12 @@ table</p>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>confound_df <span class="op">=</span> confound_df[final_confounds]</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>confound_df.head()</span></code></pre>
 </div>
-<div id="callout2" class="callout callout">
+<div id="what-the-nan" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="what-the-nan" class="callout-inner">
-<h3 class="callout-title">What the NaN???<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">What the NaN???<a class="anchor" aria-label="anchor" href="#what-the-nan"></a>
 </h3>
 <div class="callout-content">
 <p>As you might have noticed, we have NaN’s in our confound dataframe.
@@ -744,7 +744,7 @@ can only attempt to estimate it</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -768,7 +768,7 @@ can only attempt to estimate it</li>
   "identifier": "https://preview.carpentries.org/SDC-BIDS-fMRI/05-data-cleaning-with-nilearn.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

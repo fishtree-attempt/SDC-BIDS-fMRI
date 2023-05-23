@@ -415,7 +415,8 @@ view them using nilearn’s plotting utilities:</p>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>nplot.plot_roi(atlas_yeo_2011[<span class="st">'thick_7'</span>], cut_coords<span class="op">=</span>cut_coords, colorbar<span class="op">=</span>colorbar, cmap<span class="op">=</span>cmap, title<span class="op">=</span><span class="st">'thick_7'</span>)</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>nplot.plot_roi(atlas_yeo_2011[<span class="st">'thick_17'</span>], cut_coords<span class="op">=</span>cut_coords, colorbar<span class="op">=</span>colorbar, cmap<span class="op">=</span>cmap, title<span class="op">=</span><span class="st">'thick_17'</span>)</span></code></pre>
 </div>
-<figure><img src="../fig/thin_7.png" class="img-responsive figure mx-auto d-block" alt="Yeo Thin 7"><img src="../fig/thin_17.png" class="img-responsive figure mx-auto d-block" alt="Yeo Thin 17"><img src="../fig/thick_7.png" class="img-responsive figure mx-auto d-block" alt="Yeo Thick 7"><img src="../fig/thick_17.png" class="img-responsive figure mx-auto d-block" alt="Yeo Thick 17"></figure><p>You’ll notice that the colour bar on the right shows the number of
+<p><img src="../fig/thin_7.png" class="img-responsive figure" alt="Yeo Thin 7"><img src="../fig/thin_17.png" class="img-responsive figure" alt="Yeo Thin 17"><img src="../fig/thick_7.png" class="img-responsive figure" alt="Yeo Thick 7"><img src="../fig/thick_17.png" class="img-responsive figure" alt="Yeo Thick 17"></p>
+<p>You’ll notice that the colour bar on the right shows the number of
 labels in each atlas and which colour corresponds to which network</p>
 <p>The 7 and 17 network parcellations correspond to the two most stable
 clustering solutions from the algorithm used by the authors. The
@@ -472,12 +473,12 @@ that we can work with it later:</p>
 </h3>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>region_labels.to_filename(<span class="st">'../resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/relabeled_yeo_atlas.nii.gz'</span>)</span></code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="resampling-exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="resampling-exercise" class="callout-inner">
-<h3 class="callout-title">Resampling Exercise<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Resampling Exercise<a class="anchor" aria-label="anchor" href="#resampling-exercise"></a>
 </h3>
 <div class="callout-content">
 <p>Our goal is to match the parcellation atlas dimensions to our
@@ -667,7 +668,7 @@ parcellations may not represent actual brain functional units!</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -691,7 +692,7 @@ parcellations may not represent actual brain functional units!</li>
   "identifier": "https://preview.carpentries.org/SDC-BIDS-fMRI/instructor/06-apply-a-parcellation.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>
